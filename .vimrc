@@ -11,6 +11,12 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+set wrap
+set linebreak
+highlight ExtraWhitespace ctermbg=red guibg=red
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+
 nnoremap tp :tabprevious<CR>
 nnoremap tn :tabnext<CR>
 nnoremap tt :tabnew<CR>
