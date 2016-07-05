@@ -6,6 +6,7 @@ filetype plugin indent on
 let g:airline_powerline_fonts = 1
 set laststatus=2
 set colorcolumn=80
+set hlsearch
 
 set shiftwidth=4
 set softtabstop=4
@@ -22,5 +23,5 @@ nnoremap tn :tabnext<CR>
 nnoremap tt :tabnew<CR>
 nnoremap tc :tabclose<CR>
 
-let g:nerdtree_tabs_open_on_console_startup=1
+let g:nerdtree_tabs_open_on_console_startup=0
 nnoremap <C-k><C-b> :NERDTreeTabsToggle<CR>
