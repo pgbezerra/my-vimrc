@@ -4,6 +4,8 @@ syntax on
 set number
 filetype plugin indent on
 let g:airline_powerline_fonts = 1
+scriptencoding utf-8
+set encoding=utf-8
 set laststatus=2
 set colorcolumn=80
 set hlsearch
