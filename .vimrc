@@ -1,14 +1,48 @@
+call plug#begin()
 execute pathogen#infect()
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'Shougo/deoplete.nvim'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
+Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
+Plug 'vim-airline/vim-airline'
+Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'kien/ctrlp.vim'
+Plug 'mattn/emmet-vim'
+Plug 'flazz/vim-colorschemes'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'rizzatti/dash.vim'
+
+call plug#end()
+
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#ignore_sources = get(g:, 'deoplete#ignore_sources', {})
+let g:deoplete#ignore_sources.php = ['omni']
+
+set backspace=indent,eol,start
 colorscheme molokai
-syntax on
 set number
-filetype plugin indent on
-let g:airline_powerline_fonts = 1
-scriptencoding utf-8
-set encoding=utf-8
 set laststatus=2
 set colorcolumn=80
 set hlsearch
+
+" Powerline
+set guifont=Inconsolata\ for\ Powerline:h15
+let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
+set t_Co=256
+set fillchars+=stl:\ ,stlnc:\
+set term=xterm-256color
+set termencoding=utf-8
+
+" airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 
 set shiftwidth=4
 set softtabstop=4
@@ -29,3 +63,6 @@ let g:nerdtree_tabs_open_on_console_startup=0
 nnoremap <C-k><C-b> :NERDTreeTabsToggle<CR>
 
 nmap <F8> :TagbarToggle<CR>
+
+" Dash
+nmap <silent> <F1> <Plug>DashSearch
