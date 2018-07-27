@@ -1,7 +1,4 @@
 call plug#begin()
-execute pathogen#infect()
-
-call plug#begin('~/.vim/plugged')
 
 Plug 'Shougo/deoplete.nvim'
 Plug 'roxma/nvim-yarp'
