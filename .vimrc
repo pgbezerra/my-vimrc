@@ -14,6 +14,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'rizzatti/dash.vim'
+Plug 'junegunn/vim-easy-align'
+Plug 'majutsushi/tagbar'
 
 call plug#end()
 
@@ -63,3 +65,6 @@ nmap <F8> :TagbarToggle<CR>
 
 " Dash
 nmap <silent> <F1> <Plug>DashSearch
+
+" Easy align
+xmap ga <Plug>(EasyAlign)
