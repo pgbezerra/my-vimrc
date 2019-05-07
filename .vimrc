@@ -16,6 +16,8 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'rizzatti/dash.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'majutsushi/tagbar'
+Plug 'elixir-lang/vim-elixir'
+Plug 'slashmili/alchemist.vim'
 
 call plug#end()
 
