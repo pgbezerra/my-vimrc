@@ -31,6 +31,7 @@ set number
 set laststatus=2
 set colorcolumn=80
 set hlsearch
+set clipboard=unnamed
 
 " Powerline
 set guifont=Inconsolata\ for\ Powerline:h15
