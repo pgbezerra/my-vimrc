@@ -22,6 +22,7 @@ call plug#end()
 
 let g:deoplete#enable_at_startup = 1
 
+set nocompatible
 set backspace=indent,eol,start
 colorscheme molokai
 set number
