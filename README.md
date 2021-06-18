@@ -1,5 +1,11 @@
 # pgbezerra's vimrc
 
+**DEPRECATION NOTE**: This repo will no longer be maintained.
+
+> I have created a repo to configure Ubuntu WSL automatically and not only vim, but the entire terminal.
+>
+> You can check on this URL: <https://github.com/paulobezerr/wsl-personal-installer>
+
 This is my personal vim configuration.
 
 ## Install
